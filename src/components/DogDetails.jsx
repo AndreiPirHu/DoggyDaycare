@@ -13,7 +13,9 @@ const DogDetails = () => {
     setDog(currentDog);
   }, [chipNumber]);
 
-
+  if (!dog) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div>
