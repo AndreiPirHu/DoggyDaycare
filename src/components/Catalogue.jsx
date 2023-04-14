@@ -28,7 +28,6 @@ const Catalogue = () => {
 
     if (storedData) {
       const data = JSON.parse(storedData);
-      console.log(data);
       setDogCatalogue(data);
     }
   }, []);
